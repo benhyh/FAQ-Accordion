@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    background-color: hsl(275, 100%, 95%);
+}   
+
+.background {
+    background-color: white;
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  margin: 20vh;
+  width: 800px;
+  height: 80vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    margin: 30px 20px;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+    margin: 15px 5px;
+}
+
+.header h1 {
+    margin: 0 20px;
+    font-size: 4rem;
+    color: hsl(292, 42%, 14%);
+}
+
+/* Questions */
+
+.question {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2vw auto;
+    align-items: center;
+}
+
+.question h2 {
+    margin: 5px 30px;
+    font-size: 1.2rem;
+}
+
+.question h2:hover {
+    cursor: pointer;
+    color: purple;
+    transition: 0.5s ease;
+}
+
+.question img {
+    margin: 20px;
+    width: 30px;
+    height: 31px;
+}
+
+.question img:hover {
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+.question.active .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.question.active .open {
+    display: none;
+}
+
+.question.active .close {
+    display: block;
+}
+
+.close {
+    display: none;
+}
+
+.answer {
+    margin: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+    font-size: 1rem;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .question h2 {
+      font-size: 1.6rem; /* Adjust as needed */
+    }
+  
+    .answer p {
+      font-size: 1.2rem; /* Adjust as needed */
+    }
+  
+    .header h1 {
+      font-size: 5rem; /* Adjust as needed */
+    }
+    
+    .header img {
+        width: 60px; /* Adjust as needed */
+        height: 60px; /* Adjust as needed */
+    }
+  }

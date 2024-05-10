@@ -46,7 +46,7 @@ Users should be able to:
 
 ### Continued development
 
-This project is by no means pixel-perfect. I had a lot of trouble along the way when it comes to adjusting the font-size to fit on smaller screen sizes as well as applying the most rudimentary principles of JavaScript. Further development will take in consideration more of the design and appeal to make it look more like the intended design provided by FrontEnd Mentor.  
+= This project is by no means pixel-perfect. I had a lot of trouble along the way when it comes to adjusting the font-size to fit on smaller screen sizes as well as applying the most rudimentary principles of JavaScript. Further development will take in consideration more of the design and appeal to make it look more like the intended design provided by FrontEnd Mentor.  
 
 ## Author
 
